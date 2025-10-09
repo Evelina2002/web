@@ -266,7 +266,7 @@ async function loadLayer3() {
     removeCurrentLayer();
     
     if (!geoTiffLayer2) {
-      const tiffUrl = "Landsat.tif";
+      const tiffUrl = "Landsat1.tif";
       console.log("Загружаю GeoTIFF:", tiffUrl);
       updateInfo("Загрузка Landsat.tif...");
 
@@ -583,3 +583,4 @@ async function togglePolygons() {
     loadingElement.innerHTML = "Ошибка: " + err.message;
   }
 })();
+
